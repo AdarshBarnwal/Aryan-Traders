@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Traders</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="img/Blogo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="products.html" target="_blank">Products</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#contactSection">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="home">
+            <h1>Welcome to Aryan Traders</h1>
+            <h3>Provide premium fertilizers and everyday groceries with a focus on quality and customer care. Our expert
+                members are dedicated to helping you find the best products for your needs.</h3>
+            <div>
+                <button type="button"
+                    onclick="document.getElementById('contactSection').scrollIntoView({ behavior: 'smooth' });">
+                    Contact us
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contactSection" class="container">
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">If you have any queries, you can contact us.</p>
+
+                <div class="info">
+                    <div class="information">
+                        <i class="fa-solid fa-map-location-dot icon"></i>
+                        <p>Jamuaon, Guthani, Siwan (841239)</p>
+                    </div>
+                    <div class="information">
+                        <i class="fa-solid fa-envelope icon"></i>
+                        <p>Aryantraders@gmail.com</p>
+                    </div>
+                    <div class="information">
+                        <i class="fa-solid fa-phone-volume icon"></i>
+                        <p>+91-7870446336</p>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <p class="title">Connect with Us</p>
+                    <div class="social-icons">
+                        <a href="https://wa.me/+917870446336?text=Hello" class="whatsapp" target="_blank"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:aryantradersjamuaon@gmail.com?subject=Hello&body=I would like to discuss..."
+                            class="mail"><i class="fas fa-envelope" target="_blank"></i></a>
+                        <a href="tel:+917870446336" class="phone"><i class="fas fa-phone" target="_blank"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <div class="circle one"></div>
+                <div class="circle two"></div>
+
+                <form action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
+                    <h3 class="title">Contact Us</h3>
+
+                    <!-- Web3Forms API Key -->
+                    <input type="hidden" name="access_key" value="4586ca67-9d92-4743-bbd4-6d6580685710" />
+
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" required />
+                        <label for="name">Name</label>
+                        <span>Name</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" required />
+                        <label for="email">Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" class="input" required />
+                        <label for="phone">Phone</label>
+                        <span>Phone</span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input" required></textarea>
+                        <label for="message">Message</label>
+                        <span>Message</span>
+                    </div>
+                    <input type="submit" value="Send" class="btn" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
